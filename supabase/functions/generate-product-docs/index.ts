@@ -36,7 +36,13 @@ Include:
 - Circuit topology and connections
 - Safety considerations
 - PCB layout recommendations
-- Testing procedures`
+- Testing procedures
+
+At the end, include a "Recommended Components & Products" section with:
+- Specific product names, model numbers, and manufacturers
+- Links to purchase (e.g., Digi-Key, Mouser, Amazon, SparkFun)
+- Price ranges and alternatives
+- Quantity needed for the project`
       },
       {
         key: 'cad',
@@ -48,7 +54,13 @@ Include:
 - Assembly structure
 - Tolerance requirements
 - Manufacturing considerations
-- 3D modeling workflow steps`
+- 3D modeling workflow steps
+
+At the end, include a "Recommended Materials & Suppliers" section with:
+- Specific material types, grades, and sizes
+- Supplier names and product codes
+- Cost estimates per unit
+- Alternative materials and their trade-offs`
       },
       {
         key: 'build',
@@ -60,7 +72,13 @@ Include:
 - Quality checkpoints
 - Troubleshooting tips
 - Safety precautions
-- Time estimates for each step`
+- Time estimates for each step
+
+At the end, include a "Tools & Equipment Shopping List" section with:
+- Specific tool brands and model numbers
+- Where to purchase (Home Depot, McMaster-Carr, etc.)
+- Price ranges for budget and premium options
+- Must-have vs nice-to-have tools`
       },
       {
         key: 'design',
@@ -72,7 +90,13 @@ Include:
 - Form factor recommendations
 - Color and material palette
 - Branding opportunities
-- Design iteration suggestions`
+- Design iteration suggestions
+
+At the end, include a "Design Resources & Materials" section with:
+- Recommended finish materials and suppliers
+- Paint/coating products with specific brands
+- Hardware and fasteners with part numbers
+- Prototyping services and vendors`
       },
       {
         key: 'marketing',
