@@ -8,6 +8,7 @@ import { CircuitBoard, FileText, Wrench, Presentation, Palette, TrendingUp, Load
 import { supabase } from "@/integrations/supabase/client";
 import { useToast } from "@/hooks/use-toast";
 import { Link } from "react-router-dom";
+import FormattedContent from "./FormattedContent";
 
 interface GeneratedContent {
   circuits?: string;
@@ -164,10 +165,8 @@ const ProductBuilder = () => {
                         <Loader2 className="w-8 h-8 animate-spin text-primary" />
                       </div>
                     ) : generatedContent[tab.key as keyof GeneratedContent] ? (
-                      <div className="prose prose-slate max-w-none">
-                        <div className="bg-muted/50 rounded-lg p-6 whitespace-pre-wrap text-foreground">
-                          {generatedContent[tab.key as keyof GeneratedContent]}
-                        </div>
+                      <div className="bg-card/50 border border-border rounded-lg p-8">
+                        <FormattedContent content={generatedContent[tab.key as keyof GeneratedContent] || ''} />
                       </div>
                     ) : (
                       <div className="text-center py-12 text-muted-foreground">
