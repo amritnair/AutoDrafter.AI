@@ -1,73 +1,15 @@
-# Welcome to your Lovable project
+AutoDraft.AI is an intelligent web app that transforms any engineering idea into a complete, build-ready plan — from concept and CAD design to circuitry, manufacturing, and marketing.
 
-## Project info
+AutoDraft.AI is a collaborative web application that helps users turn their engineering ideas into reality. Simply describe a product you want to build — like an RC airplane, a robotic arm, or a smart irrigation system — and AutoDraft.AI will generate a comprehensive blueprint that includes:
 
-**URL**: https://lovable.dev/projects/96eef120-d98c-4d64-bbad-d4a3b0d5e7bb
+🧠 Concept Breakdown: Technical feasibility analysis and design approach
 
-## How can I edit this code?
+⚙️ Circuit & System Diagrams: Schematics and component recommendations
 
-There are several ways of editing your application.
+🧩 3D CAD Design Guidance: CAD models and mechanical layout suggestions
 
-**Use Lovable**
+🛠️ Build & Assembly Instructions: Step-by-step directions for prototyping and testing
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/96eef120-d98c-4d64-bbad-d4a3b0d5e7bb) and start prompting.
+💼 Presentation & Marketing Insights: How to present, package, and promote your product
 
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/96eef120-d98c-4d64-bbad-d4a3b0d5e7bb) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+Built by a team of engineering students, AutoDraft.AI aims to bridge the gap between idea and implementation, empowering anyone — from hobbyists to engineers — to design and prototype complex products with confidence.
