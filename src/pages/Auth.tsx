@@ -121,7 +121,7 @@ const Auth = () => {
       <header className="border-b border-border/40 backdrop-blur-sm bg-background/80">
         <div className="container mx-auto px-4 py-4">
           <Link to="/" className="text-xl font-bold bg-gradient-hero bg-clip-text text-transparent hover:opacity-80 transition-opacity inline-block">
-            Product Docs Generator
+            AutoDrafter.Ai
           </Link>
         </div>
       </header>
@@ -130,7 +130,7 @@ const Auth = () => {
       <div className="flex-1 flex items-center justify-center p-4">
         <Card className="w-full max-w-md">
         <CardHeader className="space-y-1">
-          <CardTitle className="text-2xl font-bold text-center">Product Docs Generator</CardTitle>
+          <CardTitle className="text-2xl font-bold text-center">AutoDrafter.Ai</CardTitle>
           <CardDescription className="text-center">
             Create an account or login to start generating documentation
           </CardDescription>

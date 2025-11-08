@@ -77,7 +77,7 @@ const ProductBuilder = () => {
       <header className="border-b border-border/40 backdrop-blur-sm sticky top-0 z-50 bg-background/80">
         <div className="container mx-auto px-4 py-4">
           <Link to="/" className="text-xl font-bold bg-gradient-hero bg-clip-text text-transparent hover:opacity-80 transition-opacity inline-block">
-            Product Docs Generator
+            AutoDrafter.Ai
           </Link>
         </div>
       </header>
