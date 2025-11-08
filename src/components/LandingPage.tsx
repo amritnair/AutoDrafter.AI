@@ -1,9 +1,32 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { CircuitBoard, FileText, Wrench, Presentation, Palette, TrendingUp, Zap, Shield, Sparkles } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { supabase } from "@/integrations/supabase/client";
+import { useEffect, useState } from "react";
+import { User } from "@supabase/supabase-js";
 
 const LandingPage = () => {
+  const navigate = useNavigate();
+  const [user, setUser] = useState<User | null>(null);
+
+  useEffect(() => {
+    supabase.auth.getSession().then(({ data: { session } }) => {
+      setUser(session?.user ?? null);
+    });
+
+    const { data: { subscription } } = supabase.auth.onAuthStateChange((_event, session) => {
+      setUser(session?.user ?? null);
+    });
+
+    return () => subscription.unsubscribe();
+  }, []);
+
+  const handleLogout = async () => {
+    await supabase.auth.signOut();
+    setUser(null);
+  };
+
   const features = [
     {
       icon: CircuitBoard,
@@ -39,6 +62,26 @@ const LandingPage = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      {/* Header */}
+      <header className="border-b border-border/40 backdrop-blur-sm sticky top-0 z-50 bg-background/80">
+        <div className="container mx-auto px-4 py-4 flex justify-between items-center">
+          <h1 className="text-xl font-bold bg-gradient-hero bg-clip-text text-transparent">
+            Product Docs Generator
+          </h1>
+          <div>
+            {user ? (
+              <Button onClick={handleLogout} variant="outline">
+                Logout
+              </Button>
+            ) : (
+              <Button onClick={() => navigate("/auth")} variant="default">
+                Login / Sign Up
+              </Button>
+            )}
+          </div>
+        </div>
+      </header>
+
       {/* Hero Section */}
       <section className="relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-hero opacity-10" />
